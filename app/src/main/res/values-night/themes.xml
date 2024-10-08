@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for Night Mode. -->
+    <style name="Base.Theme.MyYoutube" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/youtube_red</item>
+        <item name="colorPrimaryVariant">@color/youtube_red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/youtube_red</item>
+        <item name="colorSecondaryVariant">@color/youtube_red</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/black</item> <!-- Setting background color -->
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorSurface">@color/black</item>
+        <item name="colorOnSurface">@color/white</item>
+        <!-- Other theme attributes if needed -->
+    </style>
+
+    <!-- Custom button style for Night Mode -->
+    <style name="YouTubeButton" parent="Widget.AppCompat.Button">
+        <item name="android:background">@color/youtube_red</item>
+        <item name="android:textColor">@color/white</item> <!-- White text color -->
+    </style>
+
+    <style name="Theme.MyYoutube" parent="Base.Theme.MyYoutube" />
+</resources>

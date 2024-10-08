@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Existing colors -->
+    <color name="colorPrimary">#D32F2F</color> <!-- YouTube Red -->
+    <color name="colorPrimaryVariant">#D32F2F</color> <!-- YouTube Red -->
+    <color name="colorOnPrimary">#FFFFFF</color> <!-- White -->
+    <color name="colorSecondary">#D32F2F</color> <!-- YouTube Red -->
+    <color name="colorOnSecondary">#FFFFFF</color> <!-- White -->
+
+    <!-- Adding YouTube colors -->
+    <color name="youtube_red">#D32F2F</color>
+    <color name="post_background">#000000</color> <!-- Black color for posts in dark mode -->
+
+    <!-- Adding dark mode colors -->
+    <color name="search_bar_background">#000000</color> <!-- Black background for search bar in dark mode -->
+    <color name="header_background">#000000</color> <!-- Black background for header in dark mode -->
+    <!-- new attributes for dark mode -->
+    <color name="channelBackground">#000000</color>
+    <color name="commentBoxBackground">#222222</color>
+    <color name="textColorPrimary">#FFFFFF</color>
+    <color name="textColorSecondary">#888888</color>
+
+    <color name="iconColor">#FFFFFF</color>
+    <color name="blue">#0049FF</color>
+
+</resources>

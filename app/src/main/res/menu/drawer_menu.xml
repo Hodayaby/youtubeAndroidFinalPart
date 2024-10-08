@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_favorite_videos"
+        android:icon="@drawable/ic_like"
+        android:title="@string/nav_favorite_videos" />
+    <item
+        android:id="@+id/nav_dark_mode"
+        android:icon="@drawable/ic_dark"
+        android:title="@string/nav_dark_mode" />
+    <item
+        android:id="@+id/nav_logout"
+        android:icon="@drawable/ic_logout"
+        android:title="@string/nav_logout" />
+</menu>
+

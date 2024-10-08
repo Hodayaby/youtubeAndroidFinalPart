@@ -1,0 +1,46 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Edit Text for Password -->
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="12dp" />
+
+    <!-- Edit Text for Confirming Password -->
+    <EditText
+        android:id="@+id/editConfirmPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:layout_marginTop="12dp" />
+
+    <!-- Image View for Profile Image Preview -->
+    <ImageView
+        android:id="@+id/profileImagePreview"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_profile"
+        android:contentDescription="Profile Image" />
+
+    <!-- Button for Changing Profile Image -->
+    <Button
+        android:id="@+id/changeProfileImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Change Profile Image"
+        android:layout_gravity="center"
+        android:layout_marginTop="12dp" />
+</LinearLayout>

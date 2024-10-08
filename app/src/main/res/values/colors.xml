@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Existing colors -->
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryVariant">#3700B3</color>
+    <color name="colorOnPrimary">#FFFFFF</color>
+    <color name="colorSecondary">#03DAC5</color>
+    <color name="colorOnSecondary">#000000</color>
+
+    <!-- Adding my color -->
+    <color name="youtube_red">#D32F2F</color>
+    <!-- Other existing colors -->
+    <color name="post_background">#FFFFFF</color> <!-- White color for posts in day mode -->
+
+    <!-- Adding colors for search bar and header -->
+    <color name="header_background">@color/white</color> <!-- White background for header in day mode -->
+    <color name="search_bar_background">@color/white</color> <!-- White background for search bar in day mode -->
+    <!-- new attributes for light mode -->
+    <color name="channelBackground">#F1F1F1</color>
+    <color name="commentBoxBackground">#EEEEEE</color>
+    <color name="textColorPrimary">#000000</color>
+    <color name="textColorSecondary">#888888</color>
+    <color name="iconColor">#5B5B5B</color>
+    <color name="blue">#0049FF</color>
+</resources>

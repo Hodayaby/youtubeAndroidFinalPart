@@ -1,0 +1,102 @@
+[
+  {
+    "author": "LA LA LAND",
+    "content": "City of Stars",
+    "description": "Best movie",
+    "views": "714K",
+    "uploadTime": "7 months ago",
+    "thumbnail": "lalalandvid",
+    "channelImage": "lalachanel",
+    "videoUri": "android.resource://com.example.myyoutube/raw/lalaland"
+  },
+  {
+    "author": "Sara Barellies",
+    "content": "She used to be mine",
+    "description": "Best song 5eva",
+    "views": "100M",
+    "uploadTime": "7 year ago",
+    "thumbnail": "sutbmvid",
+    "channelImage": "sutbmicon",
+    "videoUri": "android.resource://com.example.myyoutube/raw/sheusetobemine"
+  },
+  {
+    "author": "Taylor Swift",
+    "content": "I hate it here",
+    "description": "feeling and stuff",
+    "views": "15M",
+    "uploadTime": "1 year ago",
+    "thumbnail": "ihateithere",
+    "channelImage": "ts",
+    "videoUri": "android.resource://com.example.myyoutube/raw/ihatetthere"
+  },
+  {
+    "author": "Frank Sinatra",
+    "content": "My Way",
+    "description": "my moto",
+    "views": "65M",
+    "uploadTime": "10 year ago",
+    "thumbnail": "mywayvid",
+    "channelImage": "mywayicon",
+    "videoUri": "android.resource://com.example.myyoutube/raw/myway"
+  },
+  {
+    "author": "Carol King",
+    "content": "You've got a friend",
+    "description": "comfort song",
+    "views": "45M",
+    "uploadTime": "14 year ago",
+    "thumbnail": "carolvid",
+    "channelImage": "carolicon",
+    "videoUri": "android.resource://com.example.myyoutube/raw/youvegotafriend"
+  },
+  {
+    "author": "Les Miserables",
+    "content": "On My Own",
+    "description": "cause we love musical",
+    "views": "19M",
+    "uploadTime": "4 year ago",
+    "thumbnail": "onmyownvid",
+    "channelImage": "lalachanel",
+    "videoUri": "android.resource://com.example.myyoutube/raw/onmyown"
+  },
+  {
+    "author": "Sam Hunt",
+    "content": "Take your time",
+    "description": "basically obsessed",
+    "views": "12M",
+    "uploadTime": "1 year ago",
+    "thumbnail": "takeyourtimevid",
+    "channelImage": "samhunt",
+    "videoUri": "android.resource://com.example.myyoutube/raw/takeyourtime"
+  },
+  {
+    "author": "Sebastián Yatra",
+    "content": "Devuélveme El Corazón (Official Video)",
+    "description": "crying every time",
+    "views": "123M",
+    "uploadTime": "3 year ago",
+    "thumbnail": "syvid",
+    "channelImage": "syicon",
+    "videoUri": "android.resource://com.example.myyoutube/raw/sebsyatra"
+  },
+  {
+    "author": "The Smith",
+    "content": "There Is a Light That Never Goes Out",
+    "description": "I said I love the Smith",
+    "views": "543M",
+    "uploadTime": "9 year ago",
+    "thumbnail": "thesmithvid",
+    "channelImage": "thesmithicon",
+    "videoUri": "android.resource://com.example.myyoutube/raw/smith"
+  },
+  {
+    "author": "Carly Simon",
+    "content": "Nobody Does It Better (1977) HQ",
+    "description": "classic no notes",
+    "views": "800K",
+    "uploadTime": "16 year ago",
+    "thumbnail": "nobodyvid",
+    "channelImage": "nbodyicon",
+    "videoUri": "android.resource://com.example.myyoutube/raw/nobody"
+  }
+]

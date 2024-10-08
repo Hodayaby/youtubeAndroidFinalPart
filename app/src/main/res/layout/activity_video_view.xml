@@ -1,0 +1,305 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- VideoView for displaying the video -->
+    <VideoView
+        android:id="@+id/videoView"
+        android:layout_width="match_parent"
+        android:layout_height="292dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <!-- ScrollView to make the content scrollable -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/videoView">
+
+        <!-- LinearLayout to arrange the content vertically -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- TextView for displaying the video title -->
+            <TextView
+                android:id="@+id/videoTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Your Video Title Editable Template"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/textColorPrimary" />
+
+            <!-- TextView for displaying the video views and upload time -->
+            <TextView
+                android:id="@+id/videoDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="925,497 views • a year ago"
+                android:textColor="@color/textColorSecondary"
+                android:textSize="14sp" />
+
+            <!-- TextView for displaying the video description -->
+            <TextView
+                android:id="@+id/videoDesc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Your Video Title Editable Template"
+                android:textColor="@color/textColorPrimary"
+                android:textSize="16sp" />
+
+            <!-- כפתורים (לייק, עריכה, שיתוף, מחיקה) -->
+
+            <LinearLayout
+                android:id="@+id/buttonContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <!-- Like button with text -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/likeButton"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/like"
+                        android:src="@drawable/ic_like"
+                        app:tint="@color/iconColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Like"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/textColorPrimary" />
+                </LinearLayout>
+
+                <!-- Dislike button with text -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/dislikeButton"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/dislike"
+                        android:src="@drawable/ic_dislike"
+                        app:tint="@color/iconColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dislike"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/textColorPrimary" />
+                </LinearLayout>
+
+                <!-- Edit button with text -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="8dp">
+
+                    <ImageButton
+                        android:id="@+id/editButton"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/edit"
+                        android:src="@drawable/ic_edit"
+                        app:tint="@color/iconColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Edit"
+                        android:textColor="@color/textColorPrimary"
+                        android:textSize="12sp" />
+                    <!-- Delete Button -->
+                    <ImageButton
+                        android:id="@+id/deleteButton"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="Delete"
+                        android:src="@drawable/ic_delete"
+                        app:tint="@color/iconColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="4dp"
+                        android:text="Delete"
+                        android:textSize="12sp" />
+                </LinearLayout>
+                <!-- Image Preview and Upload Success Indicator -->
+                <ImageView
+                    android:id="@+id/previewImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/uploadImageSuccess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_check"
+                    android:visibility="gone" />
+                <!-- Share button with text -->
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/shareButton"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:contentDescription="@string/share"
+                        android:src="@drawable/ic_share"
+                        app:tint="@color/iconColor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Share"
+                        android:textSize="12sp"
+                        android:gravity="center"
+                        android:textColor="@color/textColorPrimary" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- LinearLayout for channel details -->
+            <LinearLayout
+                android:id="@+id/profileRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                android:padding="16dp"
+                android:background="@color/channelBackground">
+
+
+                <!-- Channel profile image -->
+                <ImageView
+                    android:id="@+id/videoChannelImage"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/circular_image"
+                    android:clipToOutline="true"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_profile" />
+
+                <!-- Channel name -->
+                <TextView
+                    android:id="@+id/videoArtist"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:text="Your Channel Name"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/textColorPrimary" />
+
+                <!-- YouTube logo -->
+                <ImageView
+                    android:id="@+id/youtubeLogo"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:src="@drawable/youtube_logo" />
+            </LinearLayout>
+            
+            <!-- TextView for comments label -->
+            <TextView
+                android:id="@+id/commentsLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Comments"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/textColorPrimary" />
+
+            <!-- LinearLayout to hold all comments -->
+            <LinearLayout
+                android:id="@+id/commentsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- EditText for adding a new comment -->
+            <EditText
+                android:id="@+id/commentBox"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:layout_margin="16dp"
+                android:hint="Add a comment"
+                android:padding="10dp"
+                android:background="@color/commentBoxBackground"
+                android:textColor="@color/textColorPrimary" />
+
+            <!-- Button to add a comment -->
+            <Button
+                android:id="@+id/addCommentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Comment" />
+
+            <!-- כאן מוסיפים את ה-RecyclerView של סרטוני מסך הבית אחרי התגובות -->
+            <TextView
+                android:id="@+id/homeVideosLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Related Videos"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/textColorPrimary" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/homeVideosRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+    </LinearLayout>
+    </ScrollView>
+    </RelativeLayout>

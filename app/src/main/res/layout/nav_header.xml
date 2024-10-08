@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?attr/colorPrimary">
+
+    <!-- TextView for greeting the user -->
+    <TextView
+        android:id="@+id/nav_greeting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:text="Welcome" />
+
+    <!-- ImageView for user's profile picture -->
+    <ImageView
+        android:id="@+id/nav_profile_image"
+        android:layout_width="113dp"
+        android:layout_height="113dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/circular_image"
+        android:clipToOutline="true"
+        android:src="@drawable/ic_account" />
+
+    <!-- TextView for displaying the username -->
+    <TextView
+        android:id="@+id/nav_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Username"
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+</LinearLayout>

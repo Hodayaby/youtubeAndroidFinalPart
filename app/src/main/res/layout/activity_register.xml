@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:theme="@style/Theme.MyYoutube"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- YouTube Logo -->
+        <ImageView
+            android:layout_width="297dp"
+            android:layout_height="142dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="YouTube Logo"
+            android:src="@drawable/youtube_logo" />
+
+        <!-- Username EditText -->
+        <EditText
+            android:id="@+id/registerUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/registerPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/edittext_background"
+            android:hint="Password (at least 8 characters, letters and numbers)"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:padding="12dp"
+            android:textSize="14sp" />
+
+        <!-- Confirm Password EditText -->
+        <EditText
+            android:id="@+id/registerConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirm Password"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="8dp" />
+
+        <!-- Display Name EditText -->
+        <EditText
+            android:id="@+id/displayName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Display Name"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Profile Image -->
+        <ImageView
+            android:id="@+id/profileImageView"
+            android:layout_width="94dp"
+            android:layout_height="84dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Profile Image"
+            android:scaleType="centerCrop"
+            android:src="@android:drawable/ic_menu_camera" />
+
+        <!-- Upload Image Button -->
+        <Button
+            android:id="@+id/uploadImageButton"
+            style="@style/YouTubeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:text="Upload Image" />
+
+        <!-- Error message for Image Upload -->
+        <TextView
+            android:id="@+id/imageUploadError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Please upload a profile image"
+            android:textColor="@android:color/holo_red_dark"
+            android:visibility="gone"
+            android:layout_marginTop="8dp"
+            android:padding="8dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:gravity="center" />
+
+        <!-- Register Button -->
+        <Button
+            android:id="@+id/registerButton"
+            style="@style/YouTubeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Register" />
+
+    </LinearLayout>
+</ScrollView>

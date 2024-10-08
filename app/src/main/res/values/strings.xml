@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">My youtube</string>
+    <string name="todo">TODO</string>
+    <string name="menu_button_description">Menu</string>
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    <string name="nav_favorite_videos">Videos I Liked</string>
+    <string name="nav_dark_mode">Dark Mode</string>
+    <string name="nav_logout">Logout</string>
+    <string name="dislike">Dislike</string>
+    <string name="like">Like</string>
+    <string name="edit">Edit</string>
+    <string name="share">Share</string>
+    <string name="uploadvideo" />
+</resources>
